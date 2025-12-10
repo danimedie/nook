@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-cream: #F9F7F5; /* background */
+  --color-paper: #FFFFFF; /* cards or highlight something */
+  
+  --color-charcoal: #3D3D3D; /* primary text */
+  --color-stone: #8A8A8A; /* secondary text */
+
+  --color-sage: #7A9E7E; /* accent */
+  --color-sage-hover: #628566; /* accent hover */
+  --color-terracotta: #D68C76; /* warm accent */
+  --color-sand: #E0C097; /* details */
+     
+  --font-nunito: "Nunito", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    font-family: var(--font-inter);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-nunito);
+  }
+}
